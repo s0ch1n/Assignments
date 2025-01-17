@@ -1,4 +1,6 @@
-﻿namespace ConsoleAppAssignment2nd7G
+﻿using System.Diagnostics;
+
+namespace ConsoleAppAssignment2nd7G
 {
     internal class Program11
     {
@@ -30,11 +32,16 @@
                 bill = unitConsumed * 1.80;
                 Console.WriteLine("Electricity Bill is: Rs " + bill);
             }
-            else if (unitConsumed >= 600)
+            else 
             {
                 bill = unitConsumed * 2.00;
                 Console.WriteLine("Electricity Bill is: Rs " + bill);
             }
+            Console.WriteLine("Electricity Bill: ");
+            Console.WriteLine($"Customer ID: {customerID}");
+            Console.WriteLine($"Customer Name: {customerName}");
+            Console.WriteLine($"Unit Consumed: {unitConsumed}");
+            Console.WriteLine($"Amount to be Paid: {bill}");
 
             // To keep the console window open
             Console.ReadKey();
