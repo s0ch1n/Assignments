@@ -1,7 +1,8 @@
 ﻿namespace ConsoleAppAssignment2nd6F
 {
-    internal class Program
+    internal class Program10
     {
+        //Entry point
         static void Main(string[] args)
         {
             //Mathematical Operations
@@ -53,6 +54,8 @@
                 Console.Clear();
             } while (continueChoice == 'y');
             Console.WriteLine("Thank you for using the calculator!");
+            // To keep the console window open
+            Console.ReadKey();
         }
     }
 }

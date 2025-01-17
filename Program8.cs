@@ -1,10 +1,12 @@
 ﻿namespace ConsoleAppAssignment2nd4D
 {
-    internal class Program
+    internal class Program8
     {
+        //Entry point
         static void Main(string[] args)
         {
             Console.WriteLine("Admission for Professional Course");
+            //get input from the user
             Console.Write("Enter the mark of Physics: ");
             int physicsMark = Convert.ToInt16(Console.ReadLine());
             Console.Write("Enter the mark of Maths: ");
@@ -13,6 +15,7 @@
             int chemistryMark = Convert.ToInt16(Console.ReadLine());
             int totalMarks = mathsMark + physicsMark + chemistryMark;
             Console.WriteLine("Total marks : " + totalMarks);
+            //To check the eligibilty
             if (mathsMark >= 65 && physicsMark >= 55 && chemistryMark >=50)
             {
                 if (totalMarks >= 180)

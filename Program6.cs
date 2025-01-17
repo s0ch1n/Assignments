@@ -1,10 +1,12 @@
 ﻿namespace ConsoleAppAssignment2nd1A
 {
-    internal class Program
+    internal class Program6
     {
+        //Entry point
         static void Main(string[] args)
         {
             Console.WriteLine("Eligibility check for Vote");
+            //get input from the user
             Console.Write("Enter the age of candidate: ");
             int userAge;
 
@@ -12,7 +14,7 @@
             {
                 Console.Write("Invalid input. Please enter a valid age: ");
             }
-
+            //To check the eligibility
             if (userAge>=18)
             {
                 Console.WriteLine("Candidate is eligible for vote");

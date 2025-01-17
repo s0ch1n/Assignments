@@ -1,7 +1,8 @@
 ﻿namespace ConsoleAppAssignment2nd5E
 {
-    internal class Program
+    internal class Program9
     {
+        //Entry point
         static void Main(string[] args)
         {
             
@@ -63,6 +64,8 @@
                 Console.Clear();
             } while (continueChoice == 'y');
             Console.WriteLine("Thank you for using!");
+            // To keep the console window open
+            Console.ReadKey();
         }
     }
 }
